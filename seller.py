@@ -78,7 +78,7 @@ def get_offer_ids(client_id, seller_token):
 
 
 def update_price(prices: list, client_id, seller_token):
-    """Обновить цены товаров.
+    """Установить цены на товары в магазине.
 
     Аргументы:
         prices (list): Список словарей с деталями товаров.
@@ -307,6 +307,10 @@ async def upload_stocks(watch_remnants, client_id, seller_token):
     Возвращает:
         list: список словарей с артикулами и количеством товаров, количество которых больше нуля.
         list: список словарей с артикулами и количеством всех товаров.
+
+    Примеры:
+        [{"offer_id": "4534534", "stock": 10}],
+        [{"offer_id": "4534534", "stock": 0}]
 
     """
     offer_ids = get_offer_ids(client_id, seller_token)
