@@ -53,7 +53,7 @@ def update_stocks(stocks, campaign_id, access_token):
             access_token (str): OAuth-токен.
 
         Возвращает:
-            json: объект с параметрами ответа.
+            dict: словарь с параметрами ответа.
 
         Примеры:
             >>> update_stocks(stocks, campaign_id, access_token)
@@ -87,7 +87,7 @@ def update_price(prices, campaign_id, access_token):
             access_token (str): OAuth-токен.
 
         Возвращает:
-            json: объект с параметрами ответа.
+            dict: словарь с параметрами ответа.
 
         Примеры:
             >>> update_price(prices, campaign_id, access_token)
@@ -249,7 +249,7 @@ async def upload_prices(watch_remnants, campaign_id, market_token):
             market_token (str): OAuth-токен.
 
         Возвращает:
-            Список словарей с характеристиками цен, для которых были обновлены значения в магазине.
+            list: список словарей с характеристиками цен, для которых были обновлены значения в магазине.
 
         Пример:
             >>> create_prices(watch_remnants, campaign_id, market_token)

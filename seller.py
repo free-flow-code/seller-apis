@@ -86,7 +86,7 @@ def update_price(prices: list, client_id, seller_token):
         seller_token (str): Токен продавца Ozon.
 
     Возвращает:
-        json: объект с параметрами ответа.
+        dict: словарь с параметрами ответа.
 
     Примеры:
         >>> update_price(prices: list, client_id, seller_token)
@@ -115,7 +115,7 @@ def update_stocks(stocks: list, client_id, seller_token):
         seller_token (str): Токен продавца Ozon.
 
     Возвращает:
-        json: объект с параметрами ответа.
+        dict: словарь с параметрами ответа.
 
     Примеры:
         >>> update_stocks(stocks: list, client_id, seller_token)
